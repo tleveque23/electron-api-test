@@ -1,2 +1,12 @@
 
+<h2>Electron App Runs!</h2>
+
+<div *ngIf="electronApp else notElectron">
+  <button (click)="openModal()">Open Modal</button>
+</div>
+
+<ng-template #notElectron>
+  Not an Electron App
+</ng-template>
+
 <router-outlet></router-outlet>
